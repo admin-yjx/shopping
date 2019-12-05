@@ -5,7 +5,7 @@ spring:
     name: UserServer
   datasource:
     type: org.springframework.jdbc.datasource.DriverManagerDataSource
-    url: jdbc:mysql:///User
+    url: jdbc:mysql:///User?serverTimezone=UTC
     password: root
     username: root
 eureka:
