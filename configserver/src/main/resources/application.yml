@@ -1,0 +1,21 @@
+server:
+  port: 8888
+spring:
+  application:
+    name: configserver
+  cloud:
+    bus:
+      trace:
+        enable: true
+    config:
+      server:
+        git:
+           uri: https://github.com/admin-yjx/orderingsystem.git
+           searchPaths: config
+           username: admin-yjx
+           password: 19990116.yjx
+      label: master #仓库的分支
+eureka:
+  client:
+    serviceUrl:
+      defaultZone: http://localhost:8761/eureka/
